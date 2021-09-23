@@ -24,7 +24,7 @@
 
     <!-- globalmap_server_nodelet -->
     <node pkg="nodelet" type="nodelet" name="globalmap_server_nodelet" args="load hdl_localization/GlobalmapServerNodelet $(arg nodelet_manager)">
-      <param name="globalmap_pcd" value="$(find hdl_localization)/data/map.pcd" />
+      <param name="globalmap_pcd" value="$(find hdl_localization)/data/map_df.pcd" />
       <param name="convert_utm_to_local" value="true" />
       <param name="downsample_resolution" value="0.1" />
     </node>
@@ -57,7 +57,7 @@
       <param name="specify_init_pose" value="true" />
       <param name="init_pos_x" value="0.0" />
       <param name="init_pos_y" value="0.0" />
-      <param name="init_pos_z" value="0.0" />
+      <param name="init_pos_z" value="1.5" />
       <param name="init_ori_w" value="1.0" />
       <param name="init_ori_x" value="0.0" />
       <param name="init_ori_y" value="0.0" />
